@@ -5,7 +5,7 @@ import { TodoContextType } from "../@types/todo";
 export const TodoContext = React.createContext<TodoContextType >({
   items: [],
   addTodo: () => {},
-  removeTodo: (id: string) => {},
+  removeTodo: () => {},
 });
 const TodoProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
